@@ -30,6 +30,17 @@
         .btn-action {
             margin: 0 2px;
         }
+        /* Fixed footer styling */
+        body {
+            padding-bottom: 80px; /* Add padding to prevent content from being hidden behind fixed footer */
+        }
+        .footer-fixed {
+            position: fixed;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            z-index: 1000;
+        }
     </style>
 </head>
 <body class="bg-light">
@@ -469,7 +480,7 @@
     <!-- ======================================== -->
     <!-- FOOTER -->
     <!-- ======================================== -->
-    <footer class="bg-dark text-white text-center py-3 mt-5">
+    <footer class="bg-dark text-white text-center py-3 mt-5 footer-fixed">
         <div class="container">
             <p class="mb-0">
                 <i class="fas fa-code me-2"></i>
